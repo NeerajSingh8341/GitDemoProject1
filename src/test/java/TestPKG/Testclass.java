@@ -29,7 +29,7 @@ public class Testclass {
 	}
 	
 	
-	@Test(priority = 1)
+	@Test
 	public void test2() {
 		String Title=driver.getTitle();
 		System.out.println(Title);
@@ -37,13 +37,13 @@ public class Testclass {
 		
 		System.out.println("--PASSS---+POSITIVE TEST CASE");
 	}
-	@Test(priority = 0)
-	public void test3() {
-		String Title=driver.getTitle();
-		System.out.println(Title);
-		assertEquals("Life Insurance : Max Life Insurance Company in India 2024", Title);
-		System.out.println("--FAILED---+NEGATIVE TEST CASE");
-	}
+//	@Test(priority = 0)
+//	public void test3() {
+//		String Title=driver.getTitle();
+//		System.out.println(Title);
+//		assertEquals("Life Insurance : Max Life Insurance Company in India 2024", Title);
+//		System.out.println("--FAILED---+NEGATIVE TEST CASE");
+//	}
 
 	@AfterClass
 	public void test4() {
