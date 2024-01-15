@@ -29,16 +29,20 @@ public class Testclass {
 	}
 	
 	
-	@Test
+	@Test(priority = 1)
 	public void test2() {
 		String Title=driver.getTitle();
 		System.out.println(Title);
 		assertEquals("maxlifeinsurance", Title);
+		
+		System.out.println("--PASSS---+POSITIVE TEST CASE");
 	}
-	@Test
+	@Test(priority = 0)
 	public void test3() {
 		String Title=driver.getTitle();
+		System.out.println(Title);
 		assertEquals("Life Insurance : Max Life Insurance Company in India 2024", Title);
+		System.out.println("--FAILED---+NEGATIVE TEST CASE");
 	}
 
 	@AfterClass
