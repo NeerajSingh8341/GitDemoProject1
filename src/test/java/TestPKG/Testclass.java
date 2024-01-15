@@ -33,7 +33,7 @@ public class Testclass {
 	public void test2() {
 		String Title=driver.getTitle();
 		System.out.println(Title);
-		assertEquals("maxlifeinsurance", Title);
+		assertEquals("Life Insurance : Max Life Insurance Company in India 2024", Title);
 		
 		System.out.println("--PASSS---+POSITIVE TEST CASE");
 	}
